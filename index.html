@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUY - sesi 4</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link CDN tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link cdn flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pl-10">
+      <h1
+        class="mb-4 text-4xl font-extrabold leading-none pt-10 tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-dark"
+      >
+        Belajar bikin
+        <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500"
+          >CEKREKAN LAMPU</mark
+        >
+        ngabss.
+      </h1>
+      <p
+        class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+      >
+        Now you can call it a plug to be more specific and clear. This tool does
+        look like a plug, but has a function as an adapter or electrical
+        connector
+        <br />
+        This tool is a tool to connect the end of a television cable, radio,
+        lamp, or charger so that it can be plugged into a socket.
+      </p>
+    </div>
+
+    <div
+      class="flex justify-center items-center px-1 py-20 bg-wheat-500 gap-10"
+    >
+      <!-- Lampu 1 -->
+      <div class="flex flex-col gap-2">
+        <img src="assets/images/off.gif" alt="" id="lampu1" />
+
+        <label
+          for="default-toggle1"
+          class="inline-flex items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            class="sr-only peer"
+            onchange="saklar()"
+            id="default-toggle1"
+          />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-300 rounded-full peer dark:bg-gray-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Nyalakan</span
+          >
+        </label>
+      </div>
+
+      <!-- Lampu 2 -->
+      <div class="flex flex-col gap-2">
+        <img src="assets/images/off.gif" alt="" id="lampu2" />
+        <label
+          for="default-toggle2"
+          class="inline-flex items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            class="sr-only peer"
+            onchange="saklar()"
+            id="default-toggle2"
+          />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-300 rounded-full peer dark:bg-gray-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Nyalakan</span
+          >
+        </label>
+      </div>
+
+      <!-- Lampu 3 -->
+      <div class="flex flex-col gap-2">
+        <img src="assets/images/off.gif" alt="" id="lampu3" />
+        <label
+          for="default-toggle3"
+          class="inline-flex items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            class="sr-only peer"
+            onchange="saklar()"
+            id="default-toggle3"
+          />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-300 rounded-full peer dark:bg-gray-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Nyalakan</span
+          >
+        </label>
+      </div>
+    </div>
+    <!-- cdn javascript flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Ini adalah javascript kita -->
+    <script src="saklar.js" type="application/javascript"></script>
+  </body>
+</html>
